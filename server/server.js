@@ -30,7 +30,6 @@ app.post("/", async (req, res) => {
       },
     });
 
-    console.log(response, "<< in iresponse co");
 
     res.status(200).send({
       bot: response.choices[0].message.content,
